@@ -15,8 +15,11 @@ public class Spil {
             System.out.println("spiller1: " + kort1);
             Kort kort2 = sæt.draw();
             System.out.println("spiller2: " + kort2);
-            if (sæt.compare(kort1, kort2) > 0) spiller1++;
-            if (sæt.compare(kort1, kort2) < 0) spiller2++;
+            if (kort1.compareTo(kort2) < 0){
+                spiller2++;
+            } else {
+                spiller1++;
+            }
             System.out.println("spiller1 " + spiller1 + " - " + spiller2 + " spiller2");
             System.out.println();
         }
