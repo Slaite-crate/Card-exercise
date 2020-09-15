@@ -9,7 +9,6 @@ public class Kort implements Comparable<Kort> {
         this.nummer = nummer;
     }
 
-
     @Override
     public String toString() {
         return tegn + " " + nummer;
